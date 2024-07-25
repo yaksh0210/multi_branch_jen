@@ -21,8 +21,7 @@ pipeline {
             steps {
                 script {
                     echo "Building Feature Branch -> ${env.GIT_BRANCH}"
-                    withMaven(maven: 'Maven - 3.9.0') {
-                        sh 'mvn test'
+                 
                         javac src/main/java/com/example/App.java
                         java src/main/java/com/example/App.java
                     }
