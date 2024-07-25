@@ -24,7 +24,7 @@ pipeline {
                  
                         javac src/main/java/com/example/App.java
                         java src/main/java/com/example/App.java
-                    }
+                    
                 }
             }
         }
