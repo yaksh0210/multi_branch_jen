@@ -19,7 +19,8 @@ pipeline {
         stage ('Test') {
             steps {
                 script {
-                    echo "Building Feature Branch -> ${env.GIT_BRANCH}"                    
+                    echo "Building Feature Branch -> ${env.GIT_BRANCH}"  
+                    sh "java src/main/java/com/example/App.java"                  
                 }
             }
         }
