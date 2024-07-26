@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     echo "Building Feature Branch -> ${env.GIT_BRANCH}"  
-                    echo "Hello World from Main"                  
+                    sh "java src/main/java/com/example/App.java"
                 }
             }
         }
